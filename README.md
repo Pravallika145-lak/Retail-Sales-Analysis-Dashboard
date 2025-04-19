@@ -1,10 +1,10 @@
 # Retail-Sales-Analysis-Dashboard
 Key Objectives
 
-Understand the influence of age and gender on purchasing behavior.
-Identify sales patterns across time periods and seasons.
-Determine popular product categories and pricing trends.
-Analyze transaction sizes and their contribution to revenue.
+Understand the influence of age and gender on purchasing behavior,
+Identify sales patterns across time periods and seasons,
+Determine popular product categories and pricing trends,
+Analyze transaction sizes and their contribution to revenue,
 
 Approach
 
@@ -47,28 +47,30 @@ Dashboard Construction in Power BI
 The dashboard was organized into two distinct pages, each focusing on specific aspects of the analysis.
 
 Page 1: Customer Insights & Time-Based Trends
+
 Heading: Customer Behavior and Sales Over TimeKPIs:
 
-Total Sales
-Total Quantity
-Average Sales per Transaction
+KPIs:
+Total Sales,
+Total Quantity,
+Average Sales per Transaction,
 
 Stacked Column Chart:
-Title: Purchasing Behavior by Age Group and Gender
+Title: Purchasing Behavior by Age Group and Gender,
 Purpose: Compare purchasing behaviors across age groups and genders.
 
 Donut Chart:
-Title: Gender Contribution to Sales
+Title: Gender Contribution to Sales,
 Purpose: Highlight the percentage of total sales by gender.
 
 Line Chart:
-Title: Sales Trends Over Time
+Title: Sales Trends Over Time,
 Purpose: Identify sales patterns and peaks across months.
 
 Table:
-Title: Sales by Day of Week and Month
+Title: Sales by Day of Week and Month,
 Purpose: Explore which days and months see higher sales activity.
 
 Slicers:
-Age Group
+Age Group,
 Product category
