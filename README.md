@@ -75,4 +75,5 @@ Slicers:
 Age Group,
 Product category
 
-
+🔗 View Dashboard Live  
+👉 [Click here to view the live Power BI dashboard]: https://app.powerbi.com/links/_pqKRwLrxx?ctid=d3340910-bcfe-4b84-aea4-790ec11365b4&pbi_source=linkShare
