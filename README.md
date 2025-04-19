@@ -1,44 +1,48 @@
 # Retail-Sales-Analysis-Dashboard
 Key Objectives
+
 Understand the influence of age and gender on purchasing behavior.
 Identify sales patterns across time periods and seasons.
 Determine popular product categories and pricing trends.
 Analyze transaction sizes and their contribution to revenue.
+
 Approach
+
 Data Preparation:
 Extracted fields from the date column (Year, Month, Day of Week).
 Grouped customers into age brackets (e.g., 18-25, 26-35).
 Added a Sales per Unit column to measure efficiency.
+
 Key DAX Measures:
 To facilitate dynamic and insightful analysis, the following DAX measures were created:
+
 Total Sales:
 Total Sales = SUMX('Sales Data','Sales Data'[Quantity] * 'Sales Data'[UnitPrice])
+
 Total Quantity Sold:
 Total Quantity Sold = SUM('Sales Data'[Quantity])
+
 Average Sales per Transaction:
-Average Sales per Transaction = 
-DIVIDE([Total Sales], COUNTROWS('Sales Data'))
+Average Sales per Transaction = DIVIDE([Total Sales], COUNTROWS('Sales Data')
+
 Sales Contribution by Product Category:
-Sales Contribution by Product Category = 
-DIVIDE(
+Sales Contribution by Product Category = DIVIDE(
     CALCULATE([Total Sales], ALLEXCEPT('Sales Data','Sales Data'[ProductCategory])),
-    CALCULATE([Total Sales])
-)
+    CALCULATE([Total Sales]))
+
 Sales by Age Group:
-Sales by Age Group = 
-CALCULATE(
+Sales by Age Group = CALCULATE(
     [Total Sales],
-    ALLEXCEPT('Sales Data','Sales Data'[Age Bracket])
-)
+    ALLEXCEPT('Sales Data','Sales Data'[Age Bracket]))
+
 Peak Month Sales:
-Peak Month Sales = 
-MAXX(
+Peak Month Sales = MAXX(
     SUMMARIZE(
         'Sales Data','Sales Data'[Month],
         "MonthlySales", [Total Sales]
     ),
-    [MonthlySales]
-)
+    [MonthlySales])
+
 Dashboard Construction in Power BI
 The dashboard was organized into two distinct pages, each focusing on specific aspects of the analysis.
 
